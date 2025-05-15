@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intersurgical Retouren</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/js/bootstrap.min.js">
+    <script src="/script.js"></script>
+</head>
+<body>
+
+<form action="/submit" method="post" onsubmit="validateForm()">
+    <header>
+        <nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <span class="navbar-text">
+        <img src="/assets/icons8-logo.svg" alt="enterprise-logo" width="48"  text="Logo Icon von Icons8">
+      *Unternehmen* Retouren Annahme
+    </span>
+  </div>
+</nav>
+    </header>
+
+    <main>
+
+
+    <div class="col-sm-2">
+       <input required type="text" class="form-control" placeholder="Kundennummer" minlength="5" maxlength="5" aria-label="customer-no">
+    </div>
+
+
+<div class="col-sm-2">
+    <input required type="text" class="form-control" placeholder="Kundenname" aria-label="customer-name">
+</div>
+
+<div class="col-sm-2">
+    <input required type="text" class="form-control" placeholder="Lieferscheinnummer" minlength="5" maxlength="6" aria-label="delivery-note">
+</div>
+
+<div class="col-md-4 mt-4">
+    <label for="inputState" class="form-label">Grund der Retoure</label>
+    <select id="inputState" class="form-select" aria-placeholder="Grund der Retourse" onclick="inputCommentTrigger()">
+      <option value="1">Ware beschädigt</option>
+      <option value="2">Falschlieferung</option>
+      <option value="3">Falschbestellung</option>
+      <option value="4" id="reason-miscellaneous" >sonstige Gründe</option>
+    </select>
+<div class="form-floating collapse">
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+  <label for="floatingTextarea">bitte Grund angeben</label>
+</div>
+  </div>
+
+
+<!--         <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+            <label class="form-check-label" for="checkDefault">Default checkbox</label>
+        </div> -->
+    </main>
+
+
+    <h2 class="mt-5">Ihre Kontaktdaten für Rückfragen</h2>
+<div class="col-sm-2">
+    <input required type="text" class="form-control" placeholder="Name" aria-label="user-name">
+</div>
+<div class="col-sm-2">
+    <input required type="tel" class="form-control" placeholder="Telefon" aria-label="phone-number">
+</div>
+
+<div class="col-sm-2">
+    <input required type="email" class="form-control" placeholder="Email" aria-label="email">
+</div>
+
+<button type="submit" class="btn btn-success mt-5">Senden</button>
+</form>
+
+</body>
+</html>
