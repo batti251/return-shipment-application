@@ -1,0 +1,17 @@
+header{
+    background-color: #008565 !important;
+
+}
+
+.navbar-text{
+    color: white !important;
+    font-weight: 700;
+    justify-content: center !important;
+    display: flex !important;
+    align-items: center !important;
+    width: 1440px;
+    gap: 48px;
+}
+.bg-body-tertiary{
+--bs-bg-opacity: 0 !important;
+}

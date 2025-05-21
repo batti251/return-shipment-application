@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intersurgical Retouren</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/js/bootstrap.min.js">
-    <script src="/script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/js/bootstrap.min.js">
+    <script src="script.js"></script>
 </head>
 <body>
 
-<form action="/submit" method="post" onsubmit="validateForm()">
-    <header>
+     <header>
         <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <span class="navbar-text">
-        <img src="/assets/icons8-logo.svg" alt="enterprise-logo" width="48"  text="Logo Icon von Icons8">
-      *Unternehmen* Retouren Annahme
+        <img src="./assets/icons8-logo.svg" alt="enterprise-logo" width="48"  text="Logo Icon von Icons8">
+      Intersurgical Retouren Annahme
     </span>
   </div>
 </nav>
     </header>
+
+
+<form class="m-5" action="/submit" method="post" onsubmit="validateForm()">
+   
 
     <main>
 
@@ -52,6 +55,18 @@
   <label for="floatingTextarea">bitte Grund angeben</label>
 </div>
   </div>
+
+<div class="col-sm-3 mb-3 mt-5">
+  <label for="formFile" class="form-label">bitte hier Bild hochladen</label>
+  <input class="form-control" type="file" id="formFileMultiple" multiple>
+</div>
+
+<div class="col-sm-3 mb-3 mt-4">
+  <label for="formFile" class="form-label">bitte hier Entsorgungsbeleg hochladen</label>
+  <input class="form-control" type="file" id="formFile">
+</div>
+
+
 
 
 <!--         <div class="form-check">
