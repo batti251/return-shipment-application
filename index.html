@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/js/bootstrap.min.js">
     <script src="script.js"></script>
 </head>
-<body>
+<body onload="init()">
 
      <header>
         <nav class="navbar bg-body-tertiary">
@@ -30,7 +30,7 @@
 
 
     <div class="col-sm-2">
-       <input required type="text" class="form-control" placeholder="Kundennummer" minlength="5" maxlength="5" aria-label="customer-no">
+       <input id="customer-no" required type="text" class="form-control" placeholder="Kundennummer" minlength="5" maxlength="5" aria-label="customer-no">
     </div>
 
 
